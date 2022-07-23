@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: rgb(240, 239, 243);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    width: 375px;
+    height: 520px;
+    background: #FFF;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 14px;
+    padding: 20px;
+    
+}
+
+.container form {
+    border: 1px solid rgb(82, 74, 235);
+    width: 90%;
+    height: 35px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.container form input {
+    border: none;
+    outline: none;
+    flex: 0.9;
+    color: #000;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.container form i {
+    flex: 0.1;
+    color: rgb(14, 1, 251);
+}
+
+.container .product-list {
+    height: 440px;
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+    overflow-y: scroll;
+}
+
+.container .product-list::-webkit-scrollbar {
+    display: none;
+}
+
+.product {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    height: 70px;
+    margin: 10px;
+    transition: margin-left 500ms;
+    border-radius: 10px 0 0 10px;
+}
+
+.product:hover {
+    margin-left: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.product img {
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    border-radius: 10px 3px 3px 10px;
+    object-fit: cover;
+    object-position: bottom;
+    /* border-left: 1px solid rgb(82, 74, 235); */
+}
+
+.product .details {
+    margin-left: 5px;
+}
+
+.product .details h2 {
+    font-size: 20px;
+    color: #1d1d1d;
+}
+
+.product .details h3 {
+    font-size: 18px;
+    font-family: 'Big Shoulders Display', cursive;
+    text-decoration: overline;
+    /* color: #1d1d1d; */
+}
+
+
+
+
+
+
+
+
+
+
+
